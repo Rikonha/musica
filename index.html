@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentimentos através das Músicas</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #2e2e2e;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #3a3a3a;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        main {
+            width: 80%;
+            max-width: 800px;
+            background-color: #3b3b3b;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .intro {
+            font-style: italic;
+            color: #c0c0c0;
+            margin-bottom: 40px;
+            font-size: 1.2rem;
+        }
+
+        .song-info {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #ffd700;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #c0c0c0;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .image-placeholder img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 8px;
+        }
+
+        .btn-toggle-lyrics, .btn-toggle-band {
+            background-color: #ffd700;
+            border: none;
+            color: #121212;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-toggle-lyrics:hover, .btn-toggle-band:hover {
+            background-color: #ffcc00;
+        }
+
+        .like-dislike {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .like, .dislike {
+            background-color: transparent;
+            border: 2px solid #ffd700;
+            color: #ffd700;
+            padding: 10px;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .like.filled, .dislike.filled {
+            background-color: #ffd700;
+            color: #121212;
+        }
+
+        .like-count, .dislike-count {
+            font-size: 1.2rem;
+            margin: 0 10px;
+        }
+
+        .lyrics {
+            display: none;
+            text-align: left;
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            padding-top: 10px;
+        }
+
+        footer {
+            color: #888;
+            margin-top: 20px;
+        }
+
+        .shoegaze-info {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sentimentos através das Músicas</h1>
+    </header>
+
+    <main>
+        <p class="intro">
+            Este site foi criado por uma pessoa anônima com o intuito de demonstrar seus sentimentos e emoções através de algumas de suas músicas favoritas. Cada canção aqui representa uma parte importante das experiências e sentimentos da vida dessa pessoa.
+        </p>
+
+        <section class="shoegaze-info">
+            <h2>Movimento e Estética do Shoegaze</h2>
+            <p>
+                O shoegaze é um gênero musical que surgiu no final dos anos 80 e início dos anos 90, caracterizado por seu som atmosférico e cheio de efeitos. Os artistas de shoegaze frequentemente criam uma parede de som densa, com camadas de guitarras distorcidas e reverberadas.
+            </p>
+            <p>
+                A estética do shoegaze é marcada por uma experiência sensorial profunda, onde a música é mais sobre a criação de atmosferas e emoções do que sobre letras ou estrutura de canções convencionais. O termo "shoegaze" se refere à tendência dos músicos de olhar para baixo em seus pedais de efeitos durante as performances, imersos na criação de seu som.
+            </p>
+            <p>
+                Entre os elementos visuais do shoegaze, destaca-se a combinação de iluminação suave e projeções visuais, criando uma experiência sensorial que complementa o som. O foco está na criação de uma experiência atmosférica que envolve e captura o ouvinte.
+            </p>
+        </section>
+
+        <section class="song-info">
+            <h2>Everlong - Foo Fighters</h2>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/600x300" alt="Capa de Everlong">
+            </div>
+            <p>
+                "Everlong" é uma música intensa e ao mesmo tempo vulnerável, transmitindo um sentimento de paixão profunda e conexão eterna. A melodia cresce de forma suave, como uma onda que aos poucos te envolve, e a letra expressa um desejo de que aquele momento de felicidade e intensidade dure para sempre. É sobre amor, nostalgia, e o desejo de se agarrar ao que nos faz sentir vivos.
+            </p>
+            <p>
+                A canção provoca uma mistura de melancolia e esperança, como se estivesse sempre à beira de um momento de ruptura emocional, mas mantendo uma força interior. A combinação dos acordes poderosos com a suavidade da voz cria uma atmosfera de profundidade, onde o ouvinte pode se perder e refletir sobre seus próprios sentimentos e memórias.
+            </p>
+            <button class="btn-toggle-lyrics">Mostrar Letra</button>
+            <div class="lyrics">
+                <p><strong>Verso 1:</strong><br> Hello, I've waited here for you<br>Everlong</p>
+                <p><strong>Refrão:</strong><br> And I wonder, when I sing along with you<br>If everything could ever feel this real forever</p>
+            </div>
+            <a href="https://www.google.com/search?q=Foo Fighters" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
+            <div class="like-dislike">
+                <button class="like">👍</button>
+                <span class="like-count">0</span>
+                <button class="dislike">👎</button>
+                <span class="dislike-count">0</span>
+            </div>
+        </section>
+
+        <section class="song-info">
+            <h2>Dark Beach - Pastel Ghost</h2>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/600x300" alt="Capa de Dark Beach">
+            </div>
+            <p>
+                "Dark Beach" da Pastel Ghost é uma viagem sonora que mistura eletrônica e dream pop, evocando uma sensação de isolamento e nostalgia. A batida suave com os sintetizadores atmosféricos criam um ambiente sombrio e distante, como se estivéssemos caminhando por uma praia deserta sob o céu noturno. A música transmite a solidão, mas de uma maneira quase reconfortante, como se o vazio tivesse sua própria beleza.
+            </p>
+            <p>
+                Ela é uma reflexão sobre o desejo de fugir da realidade, encontrando refúgio em momentos de escuridão e tranquilidade. A faixa ecoa sentimentos de saudade, como se estivéssemos olhando para o passado através de uma névoa, incapazes de voltar, mas confortados pelas memórias.
+            </p>
+            <button class="btn-toggle-lyrics">Mostrar Letra</button>
+            <div class="lyrics">
+                <p><strong>Verso 1:</strong><br> Walking down a dark beach<br>The waves are silent</p>
+                <p><strong>Refrão:</strong><br> In the night, the stars are cold<br>The darkness is my only friend</p>
+            </div>
+            <a href="https://www.google.com/search?q=Pastel Ghost" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
+            <div class="like-dislike">
+                <button class="like">👍</button>
+                <span class="like-count">0</span>
+                <button class="dislike">👎</button>
+                <span class="dislike-count">0</span>
+            </div>
+        </section>
+
+        <section class="song-info">
+            <h2>Goodbye Horse - Sematary</h2>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/600x300" alt="Capa de Goodbye Horse">
+            </div>
+            <p>
+                "Goodbye Horse" de Sematary é uma canção que captura uma atmosfera sombria e perturbadora. Sua batida repetitiva e profunda, acompanhada por letras enigmáticas, gera uma sensação de desespero e, ao mesmo tempo, libertação. É como estar preso em uma espiral de emoções confusas, onde o fim parece distante, mas ao mesmo tempo, inevitável.
+            </p>
+            <p>
+                A música carrega uma sensação de perda, não só física, mas espiritual, como se algo tivesse sido arrancado e deixado para trás. Há uma profundidade emocional, um desejo de transcendência, mas também uma aceitação da decadência. "Goodbye Horse" nos faz confrontar nossos medos internos e, ao mesmo tempo, abraçá-los, em busca de uma paz que talvez nunca chegue.
+            </p>
+            <button class="btn-toggle-lyrics">Mostrar Letra</button>
+            <div class="lyrics">
+                <p><strong>Verso 1:</strong><br> You think you're so clever<br>But I can see through your lies</p>
+                <p><strong>Refrão:</strong><br> Goodbye horse, goodbye sorrow<br>The end is near, and we must part</p>
+            </div>
+            <a href="https://www.google.com/search?q=Sematary" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
+            <div class="like-dislike">
+                <button class="like">👍</button>
+                <span class="like-count">0</span>
+                <button class="dislike">👎</button>
+                <span class="dislike-count">0</span>
+            </div>
+        </section>
+
+        <section class="song-info">
+            <h2>Need 2 - Pinegrove</h2>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/600x300" alt="Capa de Need 2">
+            </div>
+            <p>
+                "Need 2" da Pinegrove é uma faixa introspectiva que explora temas de necessidade e dependência emocional. A melodia suave e os arranjos delicados criam um ambiente introspectivo e reflexivo, onde o ouvinte é convidado a explorar suas próprias necessidades emocionais e a importância das conexões pessoais.
+            </p>
+            <p>
+                A música reflete uma busca por compreensão e apoio, abordando a vulnerabilidade de se abrir para os outros e o desejo de ser compreendido. É uma expressão sincera das complexidades das relações humanas e da necessidade de apoio mútuo.
+            </p>
+            <button class="btn-toggle-lyrics">Mostrar Letra</button>
+            <div class="lyrics">
+                <p><strong>Verso 1:</strong><br> I need you here, I need you now<br>More than ever before</p>
+                <p><strong>Refrão:</strong><br> I need to find a way<br>To make you understand my pain</p>
+            </div>
+            <a href="https://www.google.com/search?q=Pinegrove" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
+            <div class="like-dislike">
+                <button class="like">👍</button>
+                <span class="like-count">0</span>
+                <button class="dislike">👎</button>
+                <span class="dislike-count">0</span>
+            </div>
+        </section>
+
+        <section class="song-info">
+            <h2>Loneliness - Decalius</h2>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/600x300" alt="Capa de Loneliness">
+            </div>
+            <p>
+                "Loneliness" de Decalius é uma canção que explora a solidão e o desejo de conexão. A música transmite um sentimento de desamparo e introspecção, com uma melodia que reflete a profundidade do sentimento de estar sozinho.
+            </p>
+            <p>
+                A faixa é uma jornada emocional, revelando as nuances da solidão e o anseio por compreensão e conexão. A letra e o arranjo musical trabalham juntos para criar uma sensação de introspecção e reflexão, fazendo com que o ouvinte se sinta acompanhado em sua solidão.
+            </p>
+            <button class="btn-toggle-lyrics">Mostrar Letra</button>
+            <div class="lyrics">
+                <p><strong>Verso 1:</strong><br> In the quiet of the night<br>I feel the emptiness inside</p>
+                <p><strong>Refrão:</strong><br> Loneliness, you are my only friend<br>In this vast and empty world</p>
+            </div>
+            <a href="https://www.google.com/search?q=Decalius" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
+            <div class="like-dislike">
+                <button class="like">👍</button>
+                <span class="like-count">0</span>
+                <button class="dislike">👎</button>
+                <span class="dislike-count">0</span>
+            </div>
+        </section>
+
+        <section class="song-info">
+            <h2>Rose - Jaydes</h2>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/600x300" alt="Capa de Rose">
+            </div>
+            <p>
+                "Rose" de Jaydes é uma música que exala uma sensação de vulnerabilidade e desejo. A melodia suave e os arranjos instrumentais criam uma atmosfera de introspecção e ternura, refletindo o anseio e a esperança presentes na letra.
+            </p>
+            <p>
+                A faixa é uma expressão de emoções profundas, capturando a complexidade dos sentimentos associados ao amor e ao desejo. A letra revela um desejo de conexão e a luta interna para encontrar um sentido em meio às emoções conflitantes.
+            </p>
+            <button class="btn-toggle-lyrics">Mostrar Letra</button>
+            <div class="lyrics">
+                <p><strong>Verso 1:</strong><br> I see you in my dreams<br>Every night, every day</p>
+                <p><strong>Refrão:</strong><br> Rose, you are the light<br>That guides me through the dark</p>
+            </div>
+            <a href="https://www.google.com/search?q=Jaydes" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
+            <div class="like-dislike">
+                <button class="like">👍</button>
+                <span class="like-count">0</span>
+                <button class="dislike">👎</button>
+                <span class="dislike-count">0</span>
+            </div>
+        </section>
+
+        <section class="song-info">
+            <h2>Youngest Daughter - Rosemary</h2>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/600x300" alt="Capa de Youngest Daughter">
+            </div>
+            <p>
+                "Youngest Daughter" de Rosemary é uma faixa que explora temas de crescimento e auto-descoberta. A música é caracterizada por uma melodia introspectiva que captura a jornada emocional da juventude e os desafios associados ao amadurecimento.
+            </p>
+            <p>
+                A letra reflete a complexidade das emoções e experiências vividas, oferecendo uma visão sensível sobre o processo de crescer e encontrar seu próprio caminho. É uma expressão sincera da luta e da beleza de se tornar quem realmente somos.
+            </p>
+            <button class="btn-toggle-lyrics">Mostrar Letra</button>
+            <div class="lyrics">
+                <p><strong>Verso 1:</strong><br> Growing up is so hard<br>Finding my place in this world</p>
+                <p><strong>Refrão:</strong><br> Youngest daughter, hear my plea<br>The road ahead is so uncertain</p>
+            </div>
+            <a href="https://www.google.com/search?q=Rosemary" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
+            <div class="like-dislike">
+                <button class="like">👍</button>
+                <span class="like-count">0</span>
+                <button class="dislike">👎</button>
+                <span class="dislike-count">0</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sentimentos através das Músicas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.btn-toggle-lyrics').forEach(button => {
+            button.addEventListener('click', function() {
+                const lyricsDiv = this.nextElementSibling;
+                lyricsDiv.style.display = lyricsDiv.style.display === 'none' || lyricsDiv.style.display === '' ? 'block' : 'none';
+            });
+        });
+
+        document.querySelectorAll('.btn-toggle-band').forEach(button => {
+            button.addEventListener('click', function() {
+                window.open(this.href, '_blank');
+                return false;
+            });
+        });
+
+        document.querySelectorAll('.like, .dislike').forEach(button => {
+            button.addEventListener('click', function() {
+                const parent = this.parentElement;
+                const likeButton = parent.querySelector('.like');
+                const dislikeButton = parent.querySelector('.dislike');
+                const likeCount = parent.querySelector('.like-count');
+                const dislikeCount = parent.querySelector('.dislike-count');
+
+                if (this === likeButton) {
+                    if (likeButton.classList.contains('filled')) {
+                        likeButton.classList.remove('filled');
+                        likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                    } else {
+                        likeButton.classList.add('filled');
+                        likeCount.textContent = parseInt(likeCount.textContent) + 1;
+                        if (dislikeButton.classList.contains('filled')) {
+                            dislikeButton.classList.remove('filled');
+                            dislikeCount.textContent = parseInt(dislikeCount.textContent) - 1;
+                        }
+                    }
+                } else {
+                    if (dislikeButton.classList.contains('filled')) {
+                        dislikeButton.classList.remove('filled');
+                        dislikeCount.textContent = parseInt(dislikeCount.textContent) - 1;
+                    } else {
+                        dislikeButton.classList.add('filled');
+                        dislikeCount.textContent = parseInt(dislikeCount.textContent) + 1;
+                        if (likeButton.classList.contains('filled')) {
+                            likeButton.classList.remove('filled');
+                            likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
