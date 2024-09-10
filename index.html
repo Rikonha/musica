@@ -152,30 +152,30 @@
 </head>
 <body>
 
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBmEJC2DDSe5rKTyFxo_OLGS47wvfL4-TU",
+          authDomain: "teste-42556.firebaseapp.com",
+          projectId: "teste-42556",
+          storageBucket: "teste-42556.appspot.com",
+          messagingSenderId: "755803228201",
+          appId: "1:755803228201:web:1c5dce71e8fe8b4808f438",
+          measurementId: "G-L1R2MRS06J"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyBmEJC2DDSe5rKTyFxo_OLGS47wvfL4-TU",
-    authDomain: "teste-42556.firebaseapp.com",
-    projectId: "teste-42556",
-    storageBucket: "teste-42556.appspot.com",
-    messagingSenderId: "755803228201",
-    appId: "1:755803228201:web:1c5dce71e8fe8b4808f438",
-    measurementId: "G-L1R2MRS06J"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-    
     <header>
         <h1>Sentimentos através das Músicas</h1>
     </header>
@@ -201,7 +201,7 @@
         <section class="song-info">
             <h2>Everlong - Foo Fighters</h2>
             <div class="image-placeholder">
-                <img src="https://via.placeholder.com/600x300" alt="Capa de Everlong">
+                <img src="img/everlong.jpg" alt="Capa de Everlong">
             </div>
             <p>
                 "Everlong" é uma música intensa e ao mesmo tempo vulnerável, transmitindo um sentimento de paixão profunda e conexão eterna. A melodia cresce de forma suave, como uma onda que aos poucos te envolve, e a letra expressa um desejo de que aquele momento de felicidade e intensidade dure para sempre. É sobre amor, nostalgia, e o desejo de se agarrar ao que nos faz sentir vivos.
@@ -211,8 +211,54 @@
             </p>
             <button class="btn-toggle-lyrics">Mostrar Letra</button>
             <div class="lyrics">
-                <p><strong>Verso 1:</strong><br> Hello, I've waited here for you<br>Everlong</p>
-                <p><strong>Refrão:</strong><br> And I wonder, when I sing along with you<br>If everything could ever feel this real forever</p>
+                <p><strong>Letra em Inglês:</strong><br> 
+                    Hello<br>
+                    I've waited here for you<br>
+                    Everlong<br><br>
+                    Tonight, I throw myself into<br>
+                    And out of the red<br>
+                    Out of her head, she sang<br><br>
+                    
+                    Come down and waste away with me<br>
+                    Down with me<br>
+                    Slow, how you wanted it to be<br>
+                    I'm over my head<br>
+                    Out of her head, she sang<br><br>
+
+                    And I wonder<br>
+                    When I sing along with you<br><br>
+
+                    If everything could ever be this real forever<br>
+                    If anything could ever be this good again<br>
+                    The only thing I'll ever ask of you<br>
+                    You've got to promise not to stop when I say when<br>
+                    She sang<br><br>
+
+                    Breathe out<br>
+                    So I can breathe you in<br>
+                    Hold you in<br>
+                    And now<br>
+                    I know you've always been<br>
+                    Out of your head<br>
+                    Out of my head, I sang<br><br>
+                    
+                    And I wonder<br>
+                    When I sing along with you<br><br>
+
+                    If everything could ever feel this real forever<br>
+                    If anything could ever be this good again<br>
+                    The only thing I'll ever ask of you<br>
+                    You've got to promise not to stop when I say when<br>
+                    She sang<br><br>
+
+                    And I wonder<br><br>
+
+                    If everything could ever feel this real forever<br>
+                    If anything could ever be this good again<br>
+                    The only thing I'll ever ask of you<br>
+                    You've got to promise not to stop when I say when<br>
+                    <br>Everlong</p>
+               
             </div>
             <a href="https://www.google.com/search?q=Foo Fighters" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
             <div class="like-dislike">
@@ -226,7 +272,7 @@
         <section class="song-info">
             <h2>Dark Beach - Pastel Ghost</h2>
             <div class="image-placeholder">
-                <img src="https://via.placeholder.com/600x300" alt="Capa de Dark Beach">
+                <img src="img/dark.jpg" alt="Capa de Dark Beach">
             </div>
             <p>
                 "Dark Beach" da Pastel Ghost é uma viagem sonora que mistura eletrônica e dream pop, evocando uma sensação de isolamento e nostalgia. A batida suave com os sintetizadores atmosféricos criam um ambiente sombrio e distante, como se estivéssemos caminhando por uma praia deserta sob o céu noturno. A música transmite a solidão, mas de uma maneira quase reconfortante, como se o vazio tivesse sua própria beleza.
@@ -236,8 +282,29 @@
             </p>
             <button class="btn-toggle-lyrics">Mostrar Letra</button>
             <div class="lyrics">
-                <p><strong>Verso 1:</strong><br> Walking down a dark beach<br>The waves are silent</p>
-                <p><strong>Refrão:</strong><br> In the night, the stars are cold<br>The darkness is my only friend</p>
+                <p><strong>Letra em Inglês:</strong><br> 
+Laying on a dark beach <br>
+Pulsing waves cover me <br>
+Flowers bloom on the sea <br>
+Silver sand underneath <br><br>
+Talk to me as I am sleeping <br>
+Hold me while I'm dreaming<br>
+Honestly I could just breathe you in<br>
+Met you when my heart was bleeding<br>
+I'm constantly feeling<br>
+Drifting through an endless reverie<br><br>
+Twilight moon, interlude<br>
+Fell in love in my youth<br>
+On a cloud, not a sound<br>
+Silent kiss just like this<br><br>
+Talk to me as I am sleeping<br>
+Hold me while I'm dreaming<br>
+Honestly I could just breathe you in<br>
+Met you when my heart was bleeding<br>
+I'm constantly feeling<br>
+Drifting through an endless reverie<br><br>
+                    <br>The waves are silent</p>
+                
             </div>
             <a href="https://www.google.com/search?q=Pastel Ghost" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
             <div class="like-dislike">
@@ -251,7 +318,7 @@
         <section class="song-info">
             <h2>Goodbye Horse - Sematary</h2>
             <div class="image-placeholder">
-                <img src="https://via.placeholder.com/600x300" alt="Capa de Goodbye Horse">
+                <img src="img/horses.jpg" alt="Capa de Goodbye Horse">
             </div>
             <p>
                 "Goodbye Horse" de Sematary é uma canção que captura uma atmosfera sombria e perturbadora. Sua batida repetitiva e profunda, acompanhada por letras enigmáticas, gera uma sensação de desespero e, ao mesmo tempo, libertação. É como estar preso em uma espiral de emoções confusas, onde o fim parece distante, mas ao mesmo tempo, inevitável.
@@ -261,9 +328,39 @@
             </p>
             <button class="btn-toggle-lyrics">Mostrar Letra</button>
             <div class="lyrics">
-                <p><strong>Verso 1:</strong><br> You think you're so clever<br>But I can see through your lies</p>
-                <p><strong>Refrão:</strong><br> Goodbye horse, goodbye sorrow<br>The end is near, and we must part</p>
-            </div>
+                <p><strong>Letra em Inglês</strong><br> 
+DJ Sorrow <br><br>
+Goodbye horses, I'm flying over you<br>
+Goodbye horses, I'm flying over you<br>
+Goodbye horses, I'm flying over you<br>
+Goodbye horses, I'm flying, flying<br>
+Flying over you<br><br>
+He told me, "I've seen it rise<br>
+But, it always falls<br>
+I've seen them come, I seen them go"<br>
+He said, "All things pass into the night"<br>
+And I said, "Oh no, sir<br>
+I must say you're wrong<br>
+I must disagree, oh no, sir<br>
+I must say you're wrong<br>
+Won't you listen to me?"<br><br>
+He told me, "I've seen it all before<br>
+I've been there<br>
+I've seen my hopes and dreams<br>
+Lying on the ground<br>
+I've seen the sky, just begin to fall"<br>
+He said, "All things pass into the night"<br>
+And I said, "Oh no sir<br>
+I must say you're wrong<br>
+I must disagree, oh no, sir<br>
+I must say you're wrong"<br><br>
+Goodbye horses, I'm flying over you<br>
+Goodbye horses, I'm flying over you<br>
+Goodbye horses, I'm flying over you<br>
+Goodbye horses, I'm flying, flying<br>
+Flying over you<br><br>
+                    <br>But I can see through your lies</p>
+                
             <a href="https://www.google.com/search?q=Sematary" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
             <div class="like-dislike">
                 <button class="like">👍</button>
@@ -276,7 +373,7 @@
         <section class="song-info">
             <h2>Need 2 - Pinegrove</h2>
             <div class="image-placeholder">
-                <img src="https://via.placeholder.com/600x300" alt="Capa de Need 2">
+                <img src="img/need2.jpg" alt="Capa de Need 2">
             </div>
             <p>
                 "Need 2" da Pinegrove é uma faixa introspectiva que explora temas de necessidade e dependência emocional. A melodia suave e os arranjos delicados criam um ambiente introspectivo e reflexivo, onde o ouvinte é convidado a explorar suas próprias necessidades emocionais e a importância das conexões pessoais.
@@ -286,8 +383,21 @@
             </p>
             <button class="btn-toggle-lyrics">Mostrar Letra</button>
             <div class="lyrics">
-                <p><strong>Verso 1:</strong><br> I need you here, I need you now<br>More than ever before</p>
-                <p><strong>Refrão:</strong><br> I need to find a way<br>To make you understand my pain</p>
+                <p><strong>Letra em Inglês:</strong><br>
+                    I'm out <br>
+                    Nothing here to care about<br><br>
+
+                    What's that sound?<br>
+                    What's that song about?<br>
+                    It's nothing worth me sayin' aloud<br><br>
+
+                    So then why do I seem to<br>
+                    Need to?<br><br>
+
+                    Then why do I seem to<br>
+                    Need to?<br><br>
+                    <br>More than ever before</p>
+                
             </div>
             <a href="https://www.google.com/search?q=Pinegrove" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
             <div class="like-dislike">
@@ -301,7 +411,7 @@
         <section class="song-info">
             <h2>Loneliness - Decalius</h2>
             <div class="image-placeholder">
-                <img src="https://via.placeholder.com/600x300" alt="Capa de Loneliness">
+                <img src="img/lone.jpg" alt="Capa de Loneliness">
             </div>
             <p>
                 "Loneliness" de Decalius é uma canção que explora a solidão e o desejo de conexão. A música transmite um sentimento de desamparo e introspecção, com uma melodia que reflete a profundidade do sentimento de estar sozinho.
@@ -311,9 +421,44 @@
             </p>
             <button class="btn-toggle-lyrics">Mostrar Letra</button>
             <div class="lyrics">
-                <p><strong>Verso 1:</strong><br> In the quiet of the night<br>I feel the emptiness inside</p>
-                <p><strong>Refrão:</strong><br> Loneliness, you are my only friend<br>In this vast and empty world</p>
-            </div>
+                <p><strong>Letra em Inglês:</strong><br> 
+There never has been any choice for me <br>
+Loneliness is all I have<br>
+There never has been any light in my life<br>
+Darkness is all I have<br>
+My life is pointing in one direction<br>
+I see it now<br><br>
+
+I don't understand<br>
+I don't understand people<br>
+Why do they want to live?<br>
+Why do they want to live?<br>
+I don't understand<br>
+I don't understand them<br>
+Why do they run from me?<br>
+Why do they run from me?<br>
+I guess they have everything<br><br>
+
+There never has been peace in my mind<br>
+Hatred is all I have<br>
+Hatred is all I feel<br>
+There never has been any choice for me<br>
+Loneliness is all I have<br>
+Loneliness is all I feel<br>
+Is all I have<br>
+And guns<br><br>
+
+I don't understand<br>
+I don't understand people<br>
+Why do they want to live?<br>
+Why do they want to live?<br>
+I don't understand<br>
+I don't understand them<br>
+Why do they run from me?<br>
+Why do they run from me?<br>
+I guess they have everything<br><br>
+                    <br>I feel the emptiness inside</p>
+                
             <a href="https://www.google.com/search?q=Decalius" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
             <div class="like-dislike">
                 <button class="like">👍</button>
@@ -326,7 +471,7 @@
         <section class="song-info">
             <h2>Rose - Jaydes</h2>
             <div class="image-placeholder">
-                <img src="https://via.placeholder.com/600x300" alt="Capa de Rose">
+                <img src="img/rose.png" alt="Capa de Rose">
             </div>
             <p>
                 "Rose" de Jaydes é uma música que exala uma sensação de vulnerabilidade e desejo. A melodia suave e os arranjos instrumentais criam uma atmosfera de introspecção e ternura, refletindo o anseio e a esperança presentes na letra.
@@ -336,9 +481,20 @@
             </p>
             <button class="btn-toggle-lyrics">Mostrar Letra</button>
             <div class="lyrics">
-                <p><strong>Verso 1:</strong><br> I see you in my dreams<br>Every night, every day</p>
-                <p><strong>Refrão:</strong><br> Rose, you are the light<br>That guides me through the dark</p>
-            </div>
+                <p><strong>Letra em Inglês:</strong><br> 
+Seemed from the start it would end this way <br>
+Tell me how it feels to fade away, away from me<br>
+I watched you run away from yourself to escape<br>
+(Run away from yourself to escape)<br>
+And I can't believe a word you say to me, don't say to me<br><br>
+
+Seemed from the start it would end this way<br>
+Tell me how it feels to fade away, away from me<br>
+I watched you run away from yourself to escape<br>
+(Run away from yourself to escape)<br>
+And I can't believe a word you say to me, don't say to me<br><br>
+                    <br>Every night, every day</p>
+                
             <a href="https://www.google.com/search?q=Jaydes" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
             <div class="like-dislike">
                 <button class="like">👍</button>
@@ -348,30 +504,8 @@
             </div>
         </section>
 
-        <section class="song-info">
-            <h2>Youngest Daughter - Rosemary</h2>
-            <div class="image-placeholder">
-                <img src="https://via.placeholder.com/600x300" alt="Capa de Youngest Daughter">
-            </div>
-            <p>
-                "Youngest Daughter" de Rosemary é uma faixa que explora temas de crescimento e auto-descoberta. A música é caracterizada por uma melodia introspectiva que captura a jornada emocional da juventude e os desafios associados ao amadurecimento.
-            </p>
-            <p>
-                A letra reflete a complexidade das emoções e experiências vividas, oferecendo uma visão sensível sobre o processo de crescer e encontrar seu próprio caminho. É uma expressão sincera da luta e da beleza de se tornar quem realmente somos.
-            </p>
-            <button class="btn-toggle-lyrics">Mostrar Letra</button>
-            <div class="lyrics">
-                <p><strong>Verso 1:</strong><br> Growing up is so hard<br>Finding my place in this world</p>
-                <p><strong>Refrão:</strong><br> Youngest daughter, hear my plea<br>The road ahead is so uncertain</p>
-            </div>
-            <a href="https://www.google.com/search?q=Rosemary" target="_blank" class="btn-toggle-band">Mais sobre a Banda</a>
-            <div class="like-dislike">
-                <button class="like">👍</button>
-                <span class="like-count">0</span>
-                <button class="dislike">👎</button>
-                <span class="dislike-count">0</span>
-            </div>
-        </section>
+        
+
     </main>
 
     <footer>
